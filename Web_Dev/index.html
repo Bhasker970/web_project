@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unifyapps</title>
+    <link rel="stylesheet" href="style.css">
+    
+      
+</head>
+
+<body>
+    <header>
+        <h1>Kubernetes Dashboard</h1>
+    </header>
+    <main>
+        <section id="projects">
+            <!-- Projects will be added here dynamically -->
+        </section>
+        <section id="add-project">
+            <h2>Add a New Project</h2>
+            <form id="project-form">
+                <label for="title">Project Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="url">Project URL:</label>
+                <input type="url" id="url" name="url" required>
+
+                <button type="submit" class="on">submit</button>
+            </form>
+        </section>
+    </main>
+    
+       
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

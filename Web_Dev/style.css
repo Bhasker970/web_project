@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    /* background: linear-gradient(135deg, #ff7e5f, #feb47b); */
+    background: url('back_image.jpg'); 
+    background-size: cover; 
+}
+
+header {
+    background-color: #816f97;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    margin: 20px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #e0f7fa; /* Light blue background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    
+    border: none;
+    border-radius: 4px;
+    background-color: #816f97;
+    color: white;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #23307c;
+}
+
+.modify-btn,
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+.on{
+    font-size:20px;
+}
+
+
+.modify-btn {
+    right: 70px;
+    color: #0056b3;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    color: #e60000;
+}
+
+.modify-btn:hover {
+    color: #5f8ac9;
+}
+
+.delete-btn:hover {
+    color: #c67171;
+}
+
+.timestamp {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+}
